@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="image.png">    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css"> 
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
 </head>
 <body>
 
@@ -19,11 +21,14 @@
 <div class="container">
     <form action="https://api.web3forms.com/submit" method="POST">
         <div class="form-group">
+            <div class="h-captcha" data-captcha="true">
             <input type="hidden" name="access_key" value=455f38af-7299-4efe-8953-a5b98a32c57d>
             <input type="text" name="name" placeholder="NAME" required>
             <input type="email" name="email"placeholder="YOUR E-MAIL" required>
             <textarea name="message" placeholder="WHICH TEAM" required></textarea>
             <button type="submit" class="btn btn-danger">Submit Form</button>
+            </div>
+
         
     </form>
 </div>
